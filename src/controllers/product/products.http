@@ -1,11 +1,26 @@
-GET http://localhost:3000/products/2
+PUT http://localhost:3000/products/2
+Content-Type: application/json
+
+{
+  "name": "Alterei via PUT",
+  "price": 51.44
+}
+###
+
+DELETE http://localhost:3000/products/2
+###
+
+GET http://localhost:3000/products/4
+###
 
 GET http://localhost:3000/products
+###
 
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Outro Produto teste",
-  "price": 19.73
+  "name": "Mais Um Produto teste",
+  "price": 109.22
 }
+###
