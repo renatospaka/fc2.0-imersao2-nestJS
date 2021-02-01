@@ -23,6 +23,7 @@ export class CheckoutController implements OnModuleInit {
         { key: Math.random()+'', value: JSON.stringify({ order: 11231, client: 'Full Cycle' }) }
       ]
     })
-    console.log(result)
+    
+    //console.log('checkout:', result)
   }
 }
