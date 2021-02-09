@@ -1,0 +1,16 @@
+chmod +x .docker/entrypoint.sh
+
+docker-compose up -d
+docker-compose exec app bash
+||    ||
+\/    \/
+//os dois '-' servem para o nodes entender a passagem de comando via emulação do ts-node
+npm run typeorm entity:create -- -n product
+npm run typeorm migration:create -- -n createProductsTable
+npm run typeorm migration:run
+
+nest generate controller controllers/product
+nest g co controllers/product
+
+## tunneling localhost 
+ngrok http 3000

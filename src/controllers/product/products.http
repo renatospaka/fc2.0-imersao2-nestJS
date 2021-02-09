@@ -1,9 +1,9 @@
-PUT http://localhost:3000/products/2
+PUT http://localhost:3000/products/5
 Content-Type: application/json
 
 {
-  "name": "Alterei via PUT",
-  "price": 51.44
+  //"name": "Alterei via PUT",
+  "price": 309.32
 }
 ###
 
